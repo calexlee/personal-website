@@ -1,0 +1,82 @@
+h1{
+    color: white;
+    font-size: 64px;
+    margin-bottom: 0;
+    filter: none;
+}
+
+.homeTitle{
+    margin-top: 10%;
+}
+
+.jobTitle{
+    clear:both;
+}
+
+.floatLeft{
+    float: left;
+}
+
+h2{
+    color: white;
+    font-size: 32px;
+    margin-left: 24px
+}
+
+h3{
+    color: white;
+    font-size: 24px;
+    float: right;
+    margin-right: 24px;
+}
+
+a{
+    color: white;
+}
+
+.bTitle{
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 2px solid #369636;
+    margin: auto;
+    padding: 0;
+    width: 40%;
+}
+
+.hTitle {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 2px solid white;
+    margin: auto;
+    padding: 0;
+    width: 40%;
+}
+
+.jobInfo{
+    font-size: 18px;
+    margin-left: 24px;
+    margin-top: 64px;
+    text-align: left;
+}
+
+.contactInfo{
+    display: absolute;
+    font-size: 24px;
+    margin-left: 348px;
+    margin-right: 24px;
+    margin-top: -500px;
+    text-align:left;
+}
+
+.ant-layout-content{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.contentIcon{
+    margin-top: 128px;
+    margin-left: 64px;
+  }
