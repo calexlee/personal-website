@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/personal-website/static/css/main.96aac6ba.chunk.css",
+    "main.js": "/personal-website/static/js/main.c33fb081.chunk.js",
+    "main.js.map": "/personal-website/static/js/main.c33fb081.chunk.js.map",
+    "runtime-main.js": "/personal-website/static/js/runtime-main.e2501c96.js",
+    "runtime-main.js.map": "/personal-website/static/js/runtime-main.e2501c96.js.map",
+    "static/js/2.9ff50841.chunk.js": "/personal-website/static/js/2.9ff50841.chunk.js",
+    "static/js/2.9ff50841.chunk.js.map": "/personal-website/static/js/2.9ff50841.chunk.js.map",
+    "index.html": "/personal-website/index.html",
+    "precache-manifest.7371fd23215d6ede4f3542e1f7a2efa4.js": "/personal-website/precache-manifest.7371fd23215d6ede4f3542e1f7a2efa4.js",
+    "service-worker.js": "/personal-website/service-worker.js",
+    "static/css/main.96aac6ba.chunk.css.map": "/personal-website/static/css/main.96aac6ba.chunk.css.map",
+    "static/js/2.9ff50841.chunk.js.LICENSE.txt": "/personal-website/static/js/2.9ff50841.chunk.js.LICENSE.txt",
+    "static/media/G4CSync.PNG": "/personal-website/static/media/G4CSync.bbccfe56.PNG",
+    "static/media/SoC.PNG": "/personal-website/static/media/SoC.d9c50c00.PNG",
+    "static/media/codenames.PNG": "/personal-website/static/media/codenames.7409ee05.PNG",
+    "static/media/App.less": "/personal-website/static/media/me.4de2f140.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.e2501c96.js",
+    "static/js/2.9ff50841.chunk.js",
+    "static/css/main.96aac6ba.chunk.css",
+    "static/js/main.c33fb081.chunk.js"
+  ]
+}
