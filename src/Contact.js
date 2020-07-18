@@ -17,7 +17,7 @@ const Contact = () => {
             <a href = "https://www.linkedin.com/in/clifford-lee-cornell/">
                 <LinkedinOutlined className = "contentIcon" style = {{fontSize: '128px', color: 'white'}}/>
             </a>
-            <a href = "https://github.coecis.cornell.edu/cal368">
+            <a href = "https://github.com/calexlee">
                 <GithubOutlined className = "contentIcon" style = {{fontSize: '128px', color: 'white'}}/>
             </a>
         </div>

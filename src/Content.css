@@ -1,3 +1,12 @@
+html,body
+{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+}
+
 h1{
     color: white;
     font-size: 64px;
@@ -80,3 +89,8 @@ a{
     margin-top: 128px;
     margin-left: 64px;
   }
+
+.projects{
+    padding-left: 2%;
+}
+
