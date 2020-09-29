@@ -37,7 +37,7 @@ const App = () => {
   <div className="App">
     <Layout style={{height:"100vh"}}> 
       <Header> 
-        <Menu className = "topNav" onClick={handleClick} selectedKeys={[loc]} mode = "horizontal">
+        <Menu className = "topNav" onClick={handleClick} selectedKeys={[loc]} mode = "horizontal" theme = "light">
         <Menu.Item key = "home" icon = {<HomeOutlined style = {iconStyle}/>}>
           Home  
         </Menu.Item>

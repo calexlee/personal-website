@@ -4,9 +4,10 @@ import './Content.css';
 const Home = () => {
     return (
         <div>
-            <h1 className = "homeTitle">Clifford Alexander Lee</h1>
+            <h2 className = "homeTitle">Clifford <span className = "nick">Alex</span>ander Lee</h2>
             <hr className="hTitle"/>
-            <h2>Computer Science Student and MATLAB Student Ambassador</h2>
+            <h2 className = "CS">Computer Science Student @ <span className = "Cornell">Cornell</span></h2>
+            <h2 className = "SA"><span className = "MATLAB">MATLAB</span> Student Ambassador</h2>
         </div>
     )
 };

@@ -16,6 +16,7 @@ h1{
 
 .homeTitle{
     margin-top: 10%;
+    font-size: 64px;
 }
 
 .jobTitle{
@@ -96,3 +97,22 @@ a{
     padding-left: 2%;
 }
 
+.CS,
+.SA, 
+homeTitle{
+    margin-right: auto;
+    margin-left:auto;
+    width: 600px;
+}
+
+.CS:hover > .Cornell{
+    color: red;
+}
+
+.SA:hover > .MATLAB{
+    color: #ff9f22;
+}
+
+.homeTitle:hover > .nick{
+    color: hsl(236, 100%, 62%);
+}
