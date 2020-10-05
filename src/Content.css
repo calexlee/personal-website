@@ -15,7 +15,6 @@ h1{
 }
 
 .homeTitle{
-    margin-top: 10%;
     font-size: 64px;
 }
 
@@ -105,6 +104,10 @@ homeTitle{
     width: 600px;
 }
 
+.nameTitle{
+    margin-top: 3%;
+}
+
 .CS:hover > .Cornell{
     color: red;
 }
@@ -115,4 +118,39 @@ homeTitle{
 
 .homeTitle:hover > .nick{
     color: hsl(236, 100%, 62%);
+}
+
+.MathWorksLine{
+    display:fixed;
+}
+
+.hidMAT{
+    float: left;
+    margin-left: 15%;
+    opacity: 0;
+}
+
+.hidCorn{
+    float: right;
+    margin-right: 15%;
+    opacity: 0;
+}
+
+.hidSun{
+    opacity: 0;
+}
+
+.SA:hover + .hidMAT {
+    opacity: 1;
+    animation-name: bounce;
+}
+
+.CS:hover + .hidCorn {
+    opacity: 1;
+    animation-name: jello;
+}
+
+.homeTitle:hover ~ .hidSun {
+    opacity: 1;
+    animation-name: zoomIn;
 }
