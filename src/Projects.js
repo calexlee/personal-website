@@ -1,18 +1,23 @@
 import React from 'react';
 import './Content.css';
-import { Card, Col, Row } from 'antd';
+import { Card, Carousel} from 'antd';
 import { GithubOutlined, ChromeOutlined } from '@ant-design/icons';
 
 const { Meta } = Card;
 
+const cardStyle = {
+    width: 600,
+}
+
 const Projects = () => {
     return (
         <div className="projects">
-            <h1>Projects</h1>
-            <Row gutter={16} align="middle">
-                <Col span={8}>
+            <h1 className="projectTitle">Projects</h1>
+            <Carousel className ="projectDisplay" draggable={true} autoplay={true} autoplaySpeed={7000}>
+                <div className=  "card">
                     <Card
-                        style= {{ width: 400 }}
+                        className = "projectCard"
+                        style= {cardStyle}
                         cover={
                             <img
                                 alt = "Settlers of Catan"
@@ -31,10 +36,11 @@ const Projects = () => {
                             description="A fully implemented Settlers of Catan board game within the Ubuntu terminal"
                         />
                     </Card>
-                </Col>
-                <Col span={8}>
+                </div>
+                <div className=  "card">
                     <Card
-                        style= {{ width: 400 }}
+                        className = "projectCard"
+                        style= {cardStyle}
                         cover={
                             <img
                                 alt = "Grading4Canvas"
@@ -51,10 +57,11 @@ const Projects = () => {
                             description="A web application interfacing with Cornell's Canvas to provide better grading methods for professors"
                         />
                     </Card>
-                </Col>
-                <Col span={8}>
+                </div>
+                <div className=  "card">
                     <Card
-                        style= {{ width: 400 }}
+                        className = "projectCard"
+                        style= {cardStyle}
                         cover={
                             <img
                                 alt = "CodeNamesPlus"
@@ -73,9 +80,31 @@ const Projects = () => {
                             description="An implementation of Codenames with realtime streaming on the web"
                         />
                     </Card>
-                </Col>
-        
-            </Row>
+                </div>
+                <div className=  "card">
+                    <Card
+                        className = "projectCard"
+                        style= {cardStyle}
+                        cover={
+                            <img
+                                alt = "Asteroid Game Screenshot"
+                                src = {require('./content/Asteroid_Game.png')}
+                                height="200"
+                            />
+                        }
+                        actions = {[
+                            <a href = "https://github.com/calexlee/AsteroidGame">
+                            <GithubOutlined key="asteroid" style = {{fontSize: '36px'}} />
+                            </a>,
+                        ]}
+                    >
+                        <Meta
+                            title="Asteroid"
+                            description="A small space game I made while self-learning Python3"
+                        />
+                    </Card>
+                </div>
+            </Carousel>
         </div>
     )
 };

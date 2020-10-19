@@ -92,9 +92,27 @@ a{
     margin-left: 64px;
   }
 
-.projects{
-    padding-left: 2%;
+
+/* Project Page Specific */
+
+.projectCard{
+    margin: auto;
 }
+
+.projectDisplay{
+    height: 480px;
+}
+
+.pCol{
+    margin: auto;
+}
+
+.projectTitle{
+    margin: auto;
+}
+
+
+/* */
 
 .CS,
 .SA, 
