@@ -6,6 +6,7 @@ const Experience = () => {
     return (
         <div className="experience">
             <h1>Current Jobs</h1>
+            <div className = "exp">
             <div className="jobTitle">
                 <h2 className="floatLeft">MATLAB Student Ambassador</h2>
                 <h3>Started September 2019</h3>
@@ -20,6 +21,8 @@ const Experience = () => {
             <a href="https://youtu.be/4MRXkC7HjzY">
             <YoutubeOutlined style = {{fontSize: "64px"}}/>
             </a>
+            </div>
+            <div className = "exp">
             <div className="jobTitle">
                 <h2 className="floatLeft">CS Consultant for CS 1112 & CS 1132</h2>
                 <h3>Started January 2019</h3>
@@ -30,7 +33,7 @@ const Experience = () => {
                 hours and one-on-one sessions with students to help them with assignments/concepts from the class; assisting in 
                 discussion/lab sessions; and performing grading on various assignments and exams.
             </p>
-
+            </div>
         </div>
     )
 };

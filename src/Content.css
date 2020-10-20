@@ -8,7 +8,7 @@ html,body
 }
 
 h1{
-    color: white;
+    color: #2b15a8;
     font-size: 64px;
     margin-bottom: 0;
     filter: none;
@@ -28,20 +28,20 @@ h1{
 }
 
 h2{
-    color: white;
+    color: #2b15a8;
     font-size: 32px;
     margin-left: 24px
 }
 
 h3{
-    color: white;
+    color: #2b15a8;
     font-size: 24px;
     float: right;
     margin-right: 24px;
 }
 
 a{
-    color: white;
+    color: #2b15a8;
 }
 
 .bTitle{
@@ -58,7 +58,7 @@ a{
     display: block;
     height: 1px;
     border: 0;
-    border-top: 2px solid white;
+    border-top: 2px solid #2b15a8;
     margin: auto;
     padding: 0;
     width: 40%;
@@ -72,8 +72,14 @@ a{
     overflow: auto;
 }
 
+.exp{
+    background-color: hsl(120, 66%, 77%, 0.2);
+    margin: 0px 10px 10px 10px;
+}
+
 .contactInfo{
     display: absolute;
+    background-color: hsl(120, 66%, 77%, 0.2);
     font-size: 24px;
     margin-left: 348px;
     margin-right: 24px;
@@ -135,7 +141,7 @@ homeTitle{
 }
 
 .homeTitle:hover > .nick{
-    color: hsl(236, 100%, 62%);
+    color: rgb(0, 140, 255);
 }
 
 .MathWorksLine{
