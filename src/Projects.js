@@ -49,7 +49,9 @@ const Projects = () => {
                             />
                         }
                         actions = {[
-                            <p> To be deployed fall 2020 </p>,
+                            <a href = "https://github.com/maidul98/Canvas-Grading-Extension"> 
+                                <GithubOutlined key="CGE" style = {{fontSize: '36px'}} />
+                             </a>
                         ]}
                     >
                         <Meta
