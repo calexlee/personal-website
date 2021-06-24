@@ -5,11 +5,32 @@ import { YoutubeOutlined } from '@ant-design/icons'
 const Experience = () => {
     return (
         <div className="experience">
-            <h1>Current Jobs</h1>
+            <h1>Current and Upcoming Jobs</h1>
+            <div className="exp">
+            <div className = "jobTitle">
+                    <h2 className="floatLeft"> Software Engineering Intern at Microsoft</h2>
+                    <h3>May 2021 - Present</h3>
+            </div>
+            <hr className = "bTitle"/>
+            <p className = "jobInfo">
+            Working within Azure Capacity Infrastructure Services to produce a machine learning model using AzureML and Databricks to predict the time various buildout tasks take to complete.
+            </p>
+            </div>
+            <div className="exp">
+            <div className = "jobTitle">
+                    <h2 className="floatLeft"> Software Engineering Intern at Facebook</h2>
+                    <h3>Starting August 2021</h3>
+            </div>
+            <hr className = "bTitle"/>
+            <p className = "jobInfo">
+                Working with a team based in Menlo Park, California. More info soon!
+            </p>
+            </div>
+            <h1>Past Experience</h1>
             <div className = "exp">
             <div className="jobTitle">
                 <h2 className="floatLeft">MATLAB Student Ambassador</h2>
-                <h3>Started September 2019</h3>
+                <h3>September 2019 - June 2021</h3>
             </div>
             <hr className="bTitle"/>
             <p className="jobInfo">
@@ -25,7 +46,7 @@ const Experience = () => {
             <div className = "exp">
             <div className="jobTitle">
                 <h2 className="floatLeft">CS Consultant for CS 1112 & CS 1132</h2>
-                <h3>Started January 2019</h3>
+                <h3>January 2019 - December 2020</h3>
             </div>
             <hr className="bTitle"/>
             <p className="jobInfo">
