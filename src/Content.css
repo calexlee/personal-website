@@ -77,6 +77,11 @@ a{
     margin: 0px 10px 10px 10px;
 }
 
+.experience{
+    min-height: 100%;
+    position: relative;
+}
+
 .contactInfo{
     display: absolute;
     background-color: hsl(120, 66%, 77%, 0.2);
