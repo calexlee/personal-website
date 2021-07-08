@@ -14,6 +14,29 @@ const Projects = () => {
         <div className="projects">
             <h1 className="projectTitle">Projects</h1>
             <Carousel className ="projectDisplay" draggable={true} autoplay={true} autoplaySpeed={7000}>
+            <div className=  "card">
+                    <Card
+                        className = "projectCard"
+                        style= {cardStyle}
+                        cover={
+                            <img
+                                alt = "WhatTheFlock"
+                                src = {require('./content/whattheflock.png')}
+                                height="200"
+                            />
+                        }
+                        actions = {[
+                            <a href = "https://gdiac.cs.cornell.edu/showcase/gallery/what_the_flock/">
+                            <ChromeOutlined key="whattheflock" style = {{fontSize: '36px'}} />
+                            </a>,
+                        ]}
+                    >
+                        <Meta
+                            title="Codenames Plus"
+                            description="An implementation of Codenames with realtime streaming on the web"
+                        />
+                    </Card>
+                </div>
                 <div className=  "card">
                     <Card
                         className = "projectCard"
