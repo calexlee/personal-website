@@ -1,137 +1,71 @@
 import React from 'react';
+import { Card, Typography, Space, Tag } from 'antd';
+import { GithubOutlined, LinkOutlined } from '@ant-design/icons';
 import './Content.css';
-import { Card, Carousel} from 'antd';
-import { GithubOutlined, ChromeOutlined } from '@ant-design/icons';
 
-const { Meta } = Card;
-
-const cardStyle = {
-    width: 600,
-}
+const { Title, Text } = Typography;
 
 const Projects = () => {
+    const projects = [
+        {
+            title: "Personal Website",
+            description: "A modern, responsive personal website built with React. Features a clean, professional design with smooth animations and transitions.",
+            technologies: ["React", "CSS", "JavaScript"],
+            github: "https://github.com/calexlee/personal-website",
+            demo: "https://calexlee.com/"
+        },
+        {
+            title: "Liminal Spirit",
+            description: "A mobile game built with OpenGL and C++. Won 2nd place in the 2022 Cornell Game Design Showcase.",
+            technologies: ["OpenGL", "C++", "Game Design"],
+        },
+    ];
+
     return (
-        <div className="projects">
-            <h1 className="projectTitle">Projects</h1>
-            <Carousel className ="projectDisplay" draggable={true} autoplay={true} autoplaySpeed={7000}>
-            <div className=  "card">
-                    <Card
-                        className = "projectCard"
-                        style= {cardStyle}
-                        cover={
-                            <img
-                                alt = "WhatTheFlock"
-                                src = {require('./content/whattheflock.png')}
-                                height="200"
-                            />
-                        }
-                        actions = {[
-                            <a href = "https://gdiac.cs.cornell.edu/showcase/gallery/what_the_flock/">
-                            <ChromeOutlined key="whattheflock" style = {{fontSize: '36px'}} />
-                            </a>,
-                        ]}
+        <div className="content-container">
+            <Title level={2} className="section-title">
+                Featured Projects
+            </Title>
+            
+            <div className="card-container">
+                {projects.map((project, index) => (
+                    <Card 
+                        key={index}
+                        className="project-card"
+                        hoverable
                     >
-                        <Meta
-                            title="Codenames Plus"
-                            description="An implementation of Codenames with realtime streaming on the web"
-                        />
+                        <div className="card-header">
+                            <Title level={3} className="card-title">
+                                {project.title}
+                            </Title>
+                            <Space wrap className="tech-tags">
+                                {project.technologies.map((tech, i) => (
+                                    <Tag key={i} color="blue">{tech}</Tag>
+                                ))}
+                            </Space>
+                        </div>
+                        
+                        <Text className="card-description">
+                            {project.description}
+                        </Text>
+                        
+                        <div className="card-links">
+                            <Space>
+                                <a href={project.github} target="_blank" rel="noopener noreferrer">
+                                    <GithubOutlined className="link-icon" />
+                                </a>
+                                {project.demo && (
+                                    <a href={project.demo} target="_blank" rel="noopener noreferrer">
+                                        <LinkOutlined className="link-icon" />
+                                    </a>
+                                )}
+                            </Space>
+                        </div>
                     </Card>
-                </div>
-                <div className=  "card">
-                    <Card
-                        className = "projectCard"
-                        style= {cardStyle}
-                        cover={
-                            <img
-                                alt = "Settlers of Catan"
-                                src = {require('./content/SoC.PNG')}
-                                height="200"
-                            />
-                        }
-                        actions = {[
-                            <a href = "https://github.com/calexlee/settlers-of-catan">
-                            <GithubOutlined key="SoC" style = {{fontSize: '36px'}} />
-                            </a>,
-                        ]}
-                    >
-                        <Meta
-                            title="Settlers of Catan"
-                            description="A fully implemented Settlers of Catan board game within the Ubuntu terminal"
-                        />
-                    </Card>
-                </div>
-                <div className=  "card">
-                    <Card
-                        className = "projectCard"
-                        style= {cardStyle}
-                        cover={
-                            <img
-                                alt = "Grading4Canvas"
-                                src = {require('./content/G4CSync.PNG')}
-                                height="200"
-                            />
-                        }
-                        actions = {[
-                            <a href = "https://github.com/maidul98/Canvas-Grading-Extension"> 
-                                <GithubOutlined key="CGE" style = {{fontSize: '36px'}} />
-                             </a>
-                        ]}
-                    >
-                        <Meta
-                            title="Grading for Canvas"
-                            description="A web application interfacing with Cornell's Canvas to provide better grading methods for professors"
-                        />
-                    </Card>
-                </div>
-                <div className=  "card">
-                    <Card
-                        className = "projectCard"
-                        style= {cardStyle}
-                        cover={
-                            <img
-                                alt = "CodeNamesPlus"
-                                src = {require('./content/codenames.PNG')}
-                                height="200"
-                            />
-                        }
-                        actions = {[
-                            <a href = "https://codenames-plus.web.app/">
-                            <ChromeOutlined key="codenames" style = {{fontSize: '36px'}} />
-                            </a>,
-                        ]}
-                    >
-                        <Meta
-                            title="Codenames Plus"
-                            description="An implementation of Codenames with realtime streaming on the web"
-                        />
-                    </Card>
-                </div>
-                <div className=  "card">
-                    <Card
-                        className = "projectCard"
-                        style= {cardStyle}
-                        cover={
-                            <img
-                                alt = "Asteroid Game Screenshot"
-                                src = {require('./content/Asteroid_Game.png')}
-                                height="200"
-                            />
-                        }
-                        actions = {[
-                            <a href = "https://github.com/calexlee/AsteroidGame">
-                            <GithubOutlined key="asteroid" style = {{fontSize: '36px'}} />
-                            </a>,
-                        ]}
-                    >
-                        <Meta
-                            title="Asteroid"
-                            description="A small space game I made while self-learning Python3"
-                        />
-                    </Card>
-                </div>
-            </Carousel>
+                ))}
+            </div>
         </div>
-    )
+    );
 };
 
 export default Projects;

@@ -1,4 +1,4 @@
-import React, { useState }  from 'react';
+import React, { useState } from 'react';
 import './App.less';
 import './Content.css'
 import { Layout, Menu } from 'antd';
@@ -12,57 +12,55 @@ const {Header, Footer, Content } = Layout;
 
 const App = () => {
   const [loc, setLoc] = useState("home");
-  const handleClick = e => {
-    console.log('clicked ', e.key);
-    setLoc(e.key);
-  }
 
-  const iconStyle = {
-    fontSize: '18px',
-  }
-  let content;
-  if (loc === "home"){
-    content = <Home/>;
-  } else if (loc === "experience"){
-    content = <Experience/>;
-  } else if (loc === "projects"){
-    content = <Projects/>;
-  } else if (loc === "contact"){
-    content = <Contact/>;
-  } else {
-    content = <div> content not displaying properly</div>;
-  }
+  const handleClick = e => {
+    setLoc(e.key);
+  };
+
+  const renderContent = () => {
+    switch (loc) {
+      case "home":
+        return <Home />;
+      case "experience":
+        return <Experience />;
+      case "projects":
+        return <Projects />;
+      case "contact":
+        return <Contact />;
+      default:
+        return <Home />;
+    }
+  };
 
   return (
-  <div className="App">
-    <Layout style={{height:"100vh"}}> 
-      <Header> 
-        <Menu className = "topNav" onClick={handleClick} selectedKeys={[loc]} mode = "horizontal" theme = "light">
-        <Menu.Item key = "home" icon = {<HomeOutlined style = {iconStyle}/>}>
-          Home  
-        </Menu.Item>
-        <Menu.Item key = "experience" icon = {<ClockCircleOutlined style = {iconStyle}/>}>
-          Experience
-        </Menu.Item>
-        <Menu.Item key = "projects" icon = {<ProjectOutlined style = {iconStyle}/>}>
-          Projects
-        </Menu.Item>
-        <Menu.Item key = "contact" icon = {<ContactsOutlined style = {iconStyle}/>}>
-          Contact
-        </Menu.Item>
-        </Menu>  
+    <Layout className="App">
+      <Header className="header">
+        <Menu className="topNav" onClick={handleClick} selectedKeys={[loc]} mode="horizontal" theme="light">
+          <Menu.Item key="home" icon={<HomeOutlined />}>
+            Home
+          </Menu.Item>
+          <Menu.Item key="experience" icon={<ClockCircleOutlined />}>
+            Experience
+          </Menu.Item>
+          <Menu.Item key="projects" icon={<ProjectOutlined />}>
+            Projects
+          </Menu.Item>
+          <Menu.Item key="contact" icon={<ContactsOutlined />}>
+            Contact
+          </Menu.Item>
+        </Menu>
       </Header>
-      <Content className = {loc}> 
-        {content}
+      <Content className="content">
+        {renderContent()}
       </Content>
-      <Footer>
+      <Footer className="footer">
         Created by Clifford Alexander Lee
-        <a href = "https://www.linkedin.com/in/clifford-lee-cornell/">
-        <LinkedinFilled className = "footIcon" style = {{fontSize: '24px'}}/>  
+        <a href="https://www.linkedin.com/in/clifford-lee-cornell/" target="_blank" rel="noopener noreferrer">
+          <LinkedinFilled className="footIcon" />
         </a>
       </Footer>
     </Layout>
-  </div>
-)};
+  );
+};
 
 export default App;

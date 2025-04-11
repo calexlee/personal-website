@@ -1,62 +1,70 @@
 import React from 'react';
+import { Card, Typography, Space } from 'antd';
+import { ClockCircleOutlined, CodeOutlined, CloudOutlined } from '@ant-design/icons';
 import './Content.css';
-import { YoutubeOutlined } from '@ant-design/icons'
+
+const { Title, Text } = Typography;
 
 const Experience = () => {
+    const experiences = [
+        {
+            title: "Software Engineer",
+            company: "Meta",
+            date: "2022 - 2024",
+            description: "Worked on two teams within Meta's AI Infrastructure team. Built solutions for handling AI Assets, and worked on the model serving platform to implement privacy features.",
+            icon: <CodeOutlined />
+        },
+        {
+            title: "Software Engineer Intern",
+            company: "Facebook",
+            date: "Fall 2021",
+            description: "Worked on Portal AI implementing computer vision models for hand detection and tracking, and also worked on the Portal Camera to improving face cropping.",
+            icon: <CodeOutlined />
+        },
+        {
+            title: "Software Engineer Intern",
+            company: "Microsoft",
+            date: "Summer 2021",
+            description: "Worked on the Azure AI Cloud Capacity team to build ML models to predict cloud capacity needs.",
+            icon: <CloudOutlined />
+        },
+    ];
+
     return (
-        <div className="experience">
-            <h1>Current and Upcoming Jobs</h1>
-            <div className="exp">
-            <div className = "jobTitle">
-                    <h2 className="floatLeft"> Software Engineering Intern at Microsoft</h2>
-                    <h3>May 2021 - Present</h3>
-            </div>
-            <hr className = "bTitle"/>
-            <p className = "jobInfo">
-            Working within Azure Capacity Infrastructure Services to produce a machine learning model using AzureML and Databricks to predict the time various buildout tasks take to complete.
-            </p>
-            </div>
-            <div className="exp">
-            <div className = "jobTitle">
-                    <h2 className="floatLeft"> Software Engineering Intern at Facebook</h2>
-                    <h3>Starting August 2021</h3>
-            </div>
-            <hr className = "bTitle"/>
-            <p className = "jobInfo">
-                Working with a team based in Menlo Park, California. More info soon!
-            </p>
-            </div>
-            <h1>Past Experience</h1>
-            <div className = "exp">
-            <div className="jobTitle">
-                <h2 className="floatLeft">MATLAB Student Ambassador</h2>
-                <h3>September 2019 - June 2021</h3>
-            </div>
-            <hr className="bTitle"/>
-            <p className="jobInfo">
-                Working for Mathworks as the sole student ambassador for Cornell University. Responsibilities include planning and 
-                holding educational events for undergraduate and graduate students using MATLAB and Simulink; use social media to spread
-                relevant educational information; and produce educational videos for the official Mathworks Youtube (my first video can
-                be found via the link below).
-            </p>
-            <a href="https://youtu.be/4MRXkC7HjzY">
-            <YoutubeOutlined style = {{fontSize: "64px"}}/>
-            </a>
-            </div>
-            <div className = "exp">
-            <div className="jobTitle">
-                <h2 className="floatLeft">CS Consultant for CS 1112 & CS 1132</h2>
-                <h3>January 2019 - December 2020</h3>
-            </div>
-            <hr className="bTitle"/>
-            <p className="jobInfo">
-                Working as a teaching assistant for Introduction to Computing using MATLAB. Responsibilities include holding office
-                hours and one-on-one sessions with students to help them with assignments/concepts from the class; assisting in 
-                discussion/lab sessions; and performing grading on various assignments and exams.
-            </p>
+        <div className="content-container">
+            <Title level={2} className="section-title">
+                Professional Experience
+            </Title>
+            
+            <div className="card-container">
+                {experiences.map((exp, index) => (
+                    <Card 
+                        key={index}
+                        className="experience-card"
+                        hoverable
+                    >
+                        <div className="card-header">
+                            <div className="job-title">
+                                <Title level={3} className="card-title">
+                                    {exp.title}
+                                </Title>
+                                <Text strong className="company-name">
+                                    {exp.company}
+                                </Text>
+                            </div>
+                            <Text type="secondary" className="experience-date">
+                                <ClockCircleOutlined /> {exp.date}
+                            </Text>
+                        </div>
+                        
+                        <Text className="card-description">
+                            {exp.description}
+                        </Text>
+                    </Card>
+                ))}
             </div>
         </div>
-    )
+    );
 };
 
 export default Experience;

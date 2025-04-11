@@ -183,3 +183,233 @@ homeTitle{
     opacity: 1;
     animation-name: zoomIn;
 }
+
+/* Home Page Styles */
+.home-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 200px);
+    padding: 40px 20px;
+}
+
+.profile-avatar {
+    border: 4px solid #2563eb;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.profile-avatar:hover {
+    transform: scale(1.05);
+}
+
+.name-title {
+    text-align: center;
+    margin: 24px 0;
+}
+
+.home-title {
+    margin: 0 !important;
+    font-size: 3.5rem !important;
+    font-weight: 700 !important;
+    color: #1e293b;
+}
+
+.nick {
+    color: #2563eb;
+}
+
+.subtitle {
+    font-size: 1.5rem !important;
+    margin-top: 12px !important;
+    display: block;
+}
+
+.social-links {
+    display: flex;
+    gap: 24px;
+    margin: 32px 0;
+}
+
+.social-icon {
+    font-size: 28px;
+    color: #64748b;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.social-icon:hover {
+    color: #2563eb;
+    transform: scale(1.1);
+}
+
+.about-section {
+    max-width: 800px;
+    text-align: center;
+    margin-top: 48px;
+    padding: 0 20px;
+}
+
+.about-text {
+    font-size: 1.2rem !important;
+    line-height: 1.8;
+    color: #475569;
+}
+
+/* Projects and Experience Page Styling */
+.content-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+.section-title {
+    font-size: 2.5rem !important;
+    margin-bottom: 32px !important;
+    color: #1e293b;
+    text-align: center;
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 24px;
+    margin-top: 32px;
+}
+
+.project-card, .experience-card {
+    background: white;
+    border-radius: 12px;
+    padding: 24px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.project-card:hover, .experience-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+}
+
+.card-header {
+    margin-bottom: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.job-title {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.card-title {
+    font-size: 1.5rem !important;
+    margin: 0 !important;
+    color: #1e293b;
+}
+
+.company-name {
+    font-size: 1.2rem !important;
+    color: #2563eb;
+    margin: 0 !important;
+}
+
+.tech-tags {
+    margin-top: 8px;
+}
+
+.card-description {
+    color: #475569;
+    line-height: 1.6;
+    margin-bottom: 16px;
+}
+
+.card-links {
+    margin-top: auto;
+}
+
+.link-icon {
+    font-size: 24px;
+    color: #64748b;
+    transition: color 0.3s ease;
+}
+
+.link-icon:hover {
+    color: #2563eb;
+}
+
+.experience-date {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #64748b;
+    margin-top: 4px;
+}
+
+/* Contact Page Styling */
+.contact-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.contact-intro {
+    max-width: 600px;
+    margin: 0 auto 48px;
+}
+
+.intro-text {
+    font-size: 1.2rem !important;
+    line-height: 1.8;
+    color: #475569;
+}
+
+.contact-info {
+    margin-top: 32px;
+}
+
+.info-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    margin-bottom: 24px;
+}
+
+.info-item a {
+    color: #2563eb;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+}
+
+.info-item a:hover {
+    color: #1e40af;
+}
+
+.info-icon {
+    font-size: 24px;
+    color: #2563eb;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .home-title {
+        font-size: 2.5rem !important;
+    }
+    
+    .subtitle {
+        font-size: 1.2rem !important;
+    }
+    
+    .about-text {
+        font-size: 1.1rem !important;
+    }
+    
+    .card-container {
+        grid-template-columns: 1fr;
+    }
+}
