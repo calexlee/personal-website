@@ -1,31 +1,14 @@
 {
   "files": {
-    "main.css": "/personal-website/static/css/main.2277567d.chunk.css",
-    "main.js": "/personal-website/static/js/main.c48c4ca6.chunk.js",
-    "main.js.map": "/personal-website/static/js/main.c48c4ca6.chunk.js.map",
-    "runtime-main.js": "/personal-website/static/js/runtime-main.99095661.js",
-    "runtime-main.js.map": "/personal-website/static/js/runtime-main.99095661.js.map",
-    "static/js/2.3ce3089d.chunk.js": "/personal-website/static/js/2.3ce3089d.chunk.js",
-    "static/js/2.3ce3089d.chunk.js.map": "/personal-website/static/js/2.3ce3089d.chunk.js.map",
+    "main.css": "/personal-website/static/css/main.03b06398.css",
+    "main.js": "/personal-website/static/js/main.969b5c0e.js",
+    "static/media/me.jpg": "/personal-website/static/media/me.5d1b279eda5cd2c1d2a8.jpg",
     "index.html": "/personal-website/index.html",
-    "precache-manifest.354fecdebe0b331371b2311839272260.js": "/personal-website/precache-manifest.354fecdebe0b331371b2311839272260.js",
-    "service-worker.js": "/personal-website/service-worker.js",
-    "static/css/main.2277567d.chunk.css.map": "/personal-website/static/css/main.2277567d.chunk.css.map",
-    "static/js/2.3ce3089d.chunk.js.LICENSE.txt": "/personal-website/static/js/2.3ce3089d.chunk.js.LICENSE.txt",
-    "static/media/Asteroid_Game.png": "/personal-website/static/media/Asteroid_Game.b5d6a0dc.png",
-    "static/media/G4CSync.PNG": "/personal-website/static/media/G4CSync.bbccfe56.PNG",
-    "static/media/L-Membrane_RGB_R.png": "/personal-website/static/media/L-Membrane_RGB_R.b348feba.png",
-    "static/media/SoC.PNG": "/personal-website/static/media/SoC.d9c50c00.PNG",
-    "static/media/SunGlasses.png": "/personal-website/static/media/SunGlasses.c4812280.png",
-    "static/media/codenames.PNG": "/personal-website/static/media/codenames.7409ee05.PNG",
-    "static/media/cornell_seal_simple_black.svg": "/personal-website/static/media/cornell_seal_simple_black.2d0fb224.svg",
-    "static/media/App.less": "/personal-website/static/media/me.4de2f140.jpg",
-    "static/media/whattheflock.png": "/personal-website/static/media/whattheflock.7f8289b9.png"
+    "main.03b06398.css.map": "/personal-website/static/css/main.03b06398.css.map",
+    "main.969b5c0e.js.map": "/personal-website/static/js/main.969b5c0e.js.map"
   },
   "entrypoints": [
-    "static/js/runtime-main.99095661.js",
-    "static/js/2.3ce3089d.chunk.js",
-    "static/css/main.2277567d.chunk.css",
-    "static/js/main.c48c4ca6.chunk.js"
+    "static/css/main.03b06398.css",
+    "static/js/main.969b5c0e.js"
   ]
 }
