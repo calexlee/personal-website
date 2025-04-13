@@ -10,7 +10,7 @@ const Projects = () => {
         {
             title: "ReRe",
             description: "A browser-based, AI-driven narrative RPG where the player is trapped in a time loop that resets on death. Each loop gives them more knowledge, dialogue options, and clues about how to survive until the next day.",
-            technologies: ["Python", "TypeScript", "React", "NextJS", "TailwindCSS", "Firebase", "OpenAI", "Prompt Engineering"],
+            technologies: ["Python", "TypeScript", "Firebase", "OpenAI", "Prompt Engineering"],
             github: "https://github.com/calexlee/rere",
         },
         {
