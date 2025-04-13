@@ -8,6 +8,12 @@ const { Title, Text } = Typography;
 const Projects = () => {
     const projects = [
         {
+            title: "ReRe",
+            description: "A browser-based, AI-driven narrative RPG where the player is trapped in a time loop that resets on death. Each loop gives them more knowledge, dialogue options, and clues about how to survive until the next day.",
+            technologies: ["Python", "TypeScript", "React", "NextJS", "TailwindCSS", "Firebase", "OpenAI", "Prompt Engineering"],
+            github: "https://github.com/calexlee/rere",
+        },
+        {
             title: "Personal Website",
             description: "A modern, responsive personal website built with React. Features a clean, professional design with smooth animations and transitions.",
             technologies: ["React", "CSS", "JavaScript"],
@@ -18,6 +24,21 @@ const Projects = () => {
             title: "Liminal Spirit",
             description: "A mobile game built with OpenGL and C++. Won 2nd place in the 2022 Cornell Game Design Showcase.",
             technologies: ["OpenGL", "C++", "Game Design"],
+        },
+        {
+            title: "What the Flock!",
+            description: "A Java application game where you play as a chef trying to cook a chicken before being eaten by one.",
+            technologies: ["Java", "LibGDX", "Game Design"],
+        },
+        {
+            title: "CodeNamesPlus",
+            description: "A web application, based on the Codenames board game, in which multiple people can play together in the same room(s).",
+            technologies: ["React", "Firebase", "JavaScript"],
+        },
+        {
+            title: "Grading for Canvas",
+            description: "A web application that integrates with the Cornell Canvas System to allow professors to grade students on assignments and see results in a more intuitive way.",
+            technologies: ["React", "ExpressJS", "Canvas API"],
         },
     ];
 
@@ -51,9 +72,11 @@ const Projects = () => {
                         
                         <div className="card-links">
                             <Space>
-                                <a href={project.github} target="_blank" rel="noopener noreferrer">
-                                    <GithubOutlined className="link-icon" />
-                                </a>
+                                {project.github && (
+                                    <a href={project.github} target="_blank" rel="noopener noreferrer">
+                                        <GithubOutlined className="link-icon" />
+                                    </a>
+                                )}
                                 {project.demo && (
                                     <a href={project.demo} target="_blank" rel="noopener noreferrer">
                                         <LinkOutlined className="link-icon" />
